@@ -23,8 +23,8 @@ class DeletePostBtnWidget extends StatelessWidget {
         ),
       ),
       onPressed: () => deleteDialog(context, postId),
-      icon: Icon(Icons.delete_outline),
-      label: Text("Delete"),
+      icon: const Icon(Icons.delete_outline),
+      label: const Text("Delete"),
     );
   }
 
@@ -40,7 +40,7 @@ class DeletePostBtnWidget extends StatelessWidget {
 
                 Navigator.of(context).pushAndRemoveUntil(
                     MaterialPageRoute(
-                      builder: (_) => PostsPage(),
+                      builder: (_) => const PostsPage(),
                     ),
                     (route) => false);
               } else if (state is ErrorChangePostState) {
@@ -51,7 +51,7 @@ class DeletePostBtnWidget extends StatelessWidget {
             },
             builder: (context, state) {
               if (state is LoadingChangePostState) {
-                return AlertDialog(
+                return const AlertDialog(
                   title: LoadingWidget(),
                 );
               }

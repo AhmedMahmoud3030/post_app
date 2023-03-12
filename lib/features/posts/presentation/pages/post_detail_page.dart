@@ -20,7 +20,7 @@ class PostDetailPage extends StatelessWidget {
 
   AppBar _buildAppbar() {
     return AppBar(
-      title: Text("Post Detail"),
+      title: const Text("Post Detail"),
     );
   }
 

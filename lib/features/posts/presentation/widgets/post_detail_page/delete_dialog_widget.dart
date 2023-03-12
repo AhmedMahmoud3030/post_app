@@ -12,11 +12,11 @@ class DeleteDialogWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: Text("Are you Sure ?"),
+      title: const Text("Are you Sure ?"),
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(),
-          child: Text(
+          child: const Text(
             "No",
           ),
         ),
@@ -26,7 +26,7 @@ class DeleteDialogWidget extends StatelessWidget {
               DeletePostEvent(postId: postId),
             );
           },
-          child: Text("Yes"),
+          child: const Text("Yes"),
         ),
       ],
     );

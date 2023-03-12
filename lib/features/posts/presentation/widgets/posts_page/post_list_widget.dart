@@ -19,13 +19,13 @@ class PostListWidget extends StatelessWidget {
           leading: Text(posts[index].id.toString()),
           title: Text(
             posts[index].title,
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
           subtitle: Text(
             posts[index].subTitle,
-            style: TextStyle(fontSize: 16),
+            style: const TextStyle(fontSize: 16),
           ),
-          contentPadding: EdgeInsets.symmetric(horizontal: 10),
+          contentPadding: const EdgeInsets.symmetric(horizontal: 10),
           onTap: () {
             Navigator.push(
               context,
@@ -36,7 +36,7 @@ class PostListWidget extends StatelessWidget {
           },
         );
       },
-      separatorBuilder: (context, index) => Divider(thickness: 1),
+      separatorBuilder: (context, index) => const Divider(thickness: 1),
     );
   }
 }

@@ -1,4 +1,3 @@
-import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:post_app/core/error/exception.dart';
 import 'package:post_app/core/network/network_info.dart';
 import 'package:post_app/features/posts/data/models/post_model.dart';

@@ -24,8 +24,8 @@ class UpdatePostBtnWidget extends StatelessWidget {
               ),
             ));
       },
-      icon: Icon(Icons.edit),
-      label: Text("Edit"),
+      icon: const Icon(Icons.edit),
+      label: const Text("Edit"),
     );
   }
 }
